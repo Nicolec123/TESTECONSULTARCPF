@@ -4,7 +4,7 @@ const cors = require('cors');
 const app = express();
 
 // Configuração de CORS para permitir requisições de qualquer origem
-app.use(cors());
+app.use(cors({ origin: '*' }));
 
 // Para permitir apenas requisições de um domínio específico, descomente abaixo:
 // app.use(cors({ origin: 'https://seusite.com' }));
